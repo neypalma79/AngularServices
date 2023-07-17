@@ -1,0 +1,35 @@
+<div>
+  <table>
+    <tr>
+      <td>Nombre:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Descripcion:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Precio</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <input
+          type="button"
+          (click)="productoService.agregarProducto()"
+          value="Agregar"
+        />
+      </td>
+      <td>
+        <input
+          type="button"
+          (click)="productoService.eliminarProducto()"
+          value="Eliminar"
+        />
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  {{ productoService.productos | json }}
+</div>
